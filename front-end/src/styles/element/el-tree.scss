@@ -1,0 +1,14 @@
+.el-tree,
+.large-tree {
+  .el-tree-node__content {
+    height: 30px;
+  }
+
+  .el-tree-node.is-expanded {
+
+    .el-tree-node__content,
+    .large-tree .el-tree-node__content {
+      height: 35px;
+    }
+  }
+}

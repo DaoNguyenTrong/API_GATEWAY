@@ -1,0 +1,47 @@
+[
+  {
+    "property": "name",
+    "label": "Name",
+    "sortable": true
+  },
+  {
+    "property": "host",
+    "label": "Host",
+    "sortable": true
+  },
+  {
+    "property": "path",
+    "label": "Path",
+    "sortable": true
+  },
+  {
+    "property": "isActive",
+    "label": "Status",
+    "sortable": true,
+    "slot": true,
+    "name": "status"
+  },
+  {
+    "name": "screens",
+    "label": "Screens",
+    "sortable": false,
+    "width": "100px",
+    "slot": true,
+    "align": "center"
+  },
+  {
+    "name": "manageChild",
+    "label": "Manage child",
+    "sortable": false,
+    "width": "100px",
+    "slot": true,
+    "align": "center"
+  },
+  {
+    "name": "actions",
+    "label": "Actions",
+    "sortable": false,
+    "width": "100px",
+    "slot": true
+  }
+]

@@ -1,0 +1,57 @@
+import { createApp } from "/node_modules/.vite/deps/vue.js?v=b4952e3e";
+import App from "/src/App.vue";
+import { createPinia } from "/node_modules/.vite/deps/pinia.js?v=b4952e3e";
+import router from "/src/router/index.js";
+import i18n from "/src/lang/index.js";
+import * as ElementPlusIconsVue from "/node_modules/.vite/deps/@element-plus_icons-vue.js?v=b4952e3e";
+import "/@id/virtual:svg-icons-register";
+import { errorHandler } from "/src/utils/error-handler.js";
+
+// import "./styles/element/index.scss";
+
+// import ElementPlus from "element-plus";
+// import all element css, uncommented next line
+import "/node_modules/element-plus/dist/index.css";
+
+// or use cdn, uncomment cdn link in `index.html`
+import "/src/styles/style.css";
+import "/src/styles/index.scss";
+
+// If you want to use ElMessage, import it.
+import "/node_modules/element-plus/theme-chalk/src/message.scss";
+// Utility classes for hiding elements
+import "/node_modules/element-plus/theme-chalk/display.css";
+
+import "/src/permission.js"; // permission control
+/* import the fontawesome core */
+import { library } from "/node_modules/.vite/deps/@fortawesome_fontawesome-svg-core.js?v=b4952e3e";
+
+/* import font awesome icon component */
+import { FontAwesomeIcon } from "/node_modules/.vite/deps/@fortawesome_vue-fontawesome.js?v=b4952e3e";
+
+/* import specific icons */
+import { fas } from "/node_modules/.vite/deps/@fortawesome_free-solid-svg-icons.js?v=b4952e3e";
+import { far } from "/node_modules/.vite/deps/@fortawesome_free-regular-svg-icons.js?v=b4952e3e";
+import { fab } from "/node_modules/.vite/deps/@fortawesome_free-brands-svg-icons.js?v=b4952e3e";
+
+const pinia = createPinia();
+library.add(fas);
+library.add(far);
+library.add(fab);
+
+const app = createApp(App);
+app.use(router);
+app.use(pinia);
+
+app.config.errorHandler = (error, instance, info) => {
+  errorHandler(error);
+};
+
+for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
+  app.component(key, component);
+}
+
+app.component("font-awesome-icon", FontAwesomeIcon);
+
+// app.use(ElementPlus);
+i18n(app).mount("#app");

@@ -1,0 +1,10 @@
+module.exports.authController = require('./authentication/auth.controller');
+module.exports.accountController = require('./authentication/account.controller');
+module.exports.roleController = require('./authorization/role.controller');
+module.exports.optionsController = require('./options/options.controller');
+module.exports.notificationsController = require('./notifications/notifications.controller');
+module.exports.screenController = require('./authorization/screen.controller');
+module.exports.apiKeyController = require('./authorization/api-key.controller');
+module.exports.apiKeyScreenController = require('./authorization/api-key-screen.controller');
+module.exports.routePathController = require('./authorization/route-path.controller');
+module.exports.routePathScreenController = require('./authorization/route-path-screen.controller');

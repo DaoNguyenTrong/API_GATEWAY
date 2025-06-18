@@ -1,0 +1,52 @@
+.login-container {
+  .el-input {
+    height: 47px;
+    --el-input-border-color: #cdcfd6;
+    --el-input-hover-border-color: #ebeff7;
+    background-color: transparent;
+
+    .el-input__wrapper {
+      background-color: transparent;
+    }
+    input {
+      border: 0px;
+      appearance: none;
+      -webkit-appearance: none;
+      border-radius: 0px;
+      padding: 12px 5px 12px 15px;
+      color: #fff;
+      caret-color: #fff;
+      background-clip: text !important;
+      -webkit-background-clip: text !important;
+      &:-webkit-autofill {
+        box-shadow: 0 0 0px 1000px transparent inset !important;
+        -webkit-text-fill-color: #fff !important;
+      }
+    }
+    ::placeholder {
+      color: #eee;
+      opacity: 1; /* Firefox */
+    }
+
+    :-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      color: #eee;
+    }
+
+    ::-ms-input-placeholder {
+      /* Microsoft Edge */
+      color: #eee;
+    }
+  }
+
+  .el-switch {
+    --el-switch-off-color: #dcdfe6;
+    .el-switch__label {
+      color: #eee !important;
+    }
+  }
+
+  .el-dropdown {
+    color: #eee !important;
+  }
+}

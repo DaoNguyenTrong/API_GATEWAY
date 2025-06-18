@@ -1,0 +1,12 @@
+module.exports.Token = require('./authentication/token.model');
+module.exports.User = require('./authentication/account.model');
+module.exports.Role = require('./authorization/role.model');
+module.exports.File = require('./file.model');
+module.exports.Option = require('./options/options.model');
+module.exports.Subscription = require('./subscription/subscription.model');
+module.exports.Screen = require('./authorization/screen.model');
+module.exports.MapScreen = require('./authorization/map-screen.model');
+module.exports.ApiKey = require('./authorization/api-key.model');
+module.exports.ApiKeyScreen = require('./authorization/api-key-screen.model');
+module.exports.RoutePath = require('./authorization/route-path.model');
+module.exports.RoutePathScreen = require('./authorization/route-path-screen.model');

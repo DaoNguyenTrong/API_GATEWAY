@@ -1,0 +1,7 @@
+.no-bg {
+  &:not(.is-plain) {
+    background-color: transparent !important;
+    color: var(--el-button-bg-color) !important;
+    border: solid 1px var(--el-button-bg-color) !important;
+  }
+}

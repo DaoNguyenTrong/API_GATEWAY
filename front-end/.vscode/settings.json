@@ -1,0 +1,179 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "editor.fontLigatures": true,
+  "editor.formatOnSave": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "editor.tabSize": 2,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "json"
+  ],
+  "files.associations": {
+    "*.env.*": "dotenv"
+  },
+  "files.eol": "\n",
+  "git.enableSmartCommit": true,
+  "gutterpreview.paths": {
+    "@": "/src",
+    "~@": "/src"
+  },
+  "material-icon-theme.activeIconPack": "angular",
+  "material-icon-theme.files.associations": {},
+  "material-icon-theme.folders.associations": {
+    "src-tauri": "src",
+    "enum": "typescript",
+    "enums": "typescript",
+    "store": "context",
+    "stores": "context",
+    "composable": "hook",
+    "composables": "hook",
+    "directive": "tools",
+    "directives": "tools",
+    "business": "core",
+    "request": "api",
+    "adapter": "middleware"
+  },
+  "path-intellisense.mappings": {
+    "@": "${workspaceFolder}/src",
+    "~@": "${workspaceFolder}/src"
+  },
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontWeight": 500,
+  "terminal.integrated.tabs.enabled": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "cSpell.words": [
+    "abiword",
+    "addfeatures",
+    "Adress",
+    "aquabox",
+    "arcgisonline",
+    "arpa",
+    "Attributify",
+    "autoresize",
+    "axios",
+    "baseicon",
+    "bigdata",
+    "bindto",
+    "BTNMT",
+    "calib",
+    "Cảnh",
+    "cefd",
+    "Chào",
+    "codemirror",
+    "collecter",
+    "composables",
+    "công",
+    "cropperjs",
+    "Dakglun",
+    "Đăng",
+    "datazoom",
+    "daterange",
+    "datetimerange",
+    "dstce",
+    "echarts",
+    "egeoxml",
+    "Elabels",
+    "EPSG",
+    "epub",
+    "exml",
+    "fontawesome",
+    "fontobject",
+    "fortawesome",
+    "freearc",
+    "freefall",
+    "fromto",
+    "GMOS",
+    "iconify",
+    "imagescan",
+    "infowindow",
+    "iwoptions",
+    "jszip",
+    "khóa",
+    "KTTV",
+    "legendselectchanged",
+    "mapbox",
+    "mapboxgl",
+    "markeroptions",
+    "middlewares",
+    "minzoom",
+    "moveend",
+    "msvideo",
+    "msword",
+    "mừng",
+    "myvar",
+    "newcommand",
+    "nhập",
+    "nowcasting",
+    "nprogress",
+    "officedocument",
+    "opendocument",
+    "openxmlformats",
+    "parsererror",
+    "PCTT",
+    "pickable",
+    "pinia",
+    "polygonoptions",
+    "polylineoptions",
+    "presentationml",
+    "printgif",
+    "Qmax",
+    "Regulatories",
+    "rmse",
+    "Seho",
+    "sidebarid",
+    "sidepanel",
+    "sortbyname",
+    "spreadsheetml",
+    "subclassing",
+    "Thành",
+    "thiessen",
+    "Thông",
+    "Thủy",
+    "titlestyle",
+    "togeojson",
+    "Topo",
+    "Topomap",
+    "typecheck",
+    "unocss",
+    "unplugin",
+    "Việt",
+    "vueuse",
+    "wjec",
+    "wordprocessingml",
+    "zlevel",
+    "zoomend"
+  ]
+}

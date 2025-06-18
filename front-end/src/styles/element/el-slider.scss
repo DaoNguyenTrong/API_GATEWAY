@@ -1,0 +1,15 @@
+.el-slider {
+  &.time-slider {
+    .el-slider__button {
+      border: none;
+      border-radius: 0;
+      width: 0;
+      height: 0;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-bottom: 15px solid white;
+      background-color: transparent;
+      transform: translateY(10px);
+    }
+  }
+}

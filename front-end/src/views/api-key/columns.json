@@ -1,0 +1,46 @@
+[
+  {
+    "property": "name",
+    "label": "Key name"
+  },
+  {
+    "property": "key",
+    "label": "Key",
+    "slot": true,
+    "name": "key",
+    "width": "350"
+  },
+  {
+    "property": "status",
+    "label": "Status",
+    "align": "center",
+    "name": "status",
+    "slot": true
+  },
+  {
+    "property": "expiredDate",
+    "label": "Expired date",
+    "name": "expiredDate",
+    "slot": true
+  },
+  {
+    "property": "createdBy",
+    "label": "Created by",
+    "slot": true,
+    "name": "createdBy"
+  },
+  {
+    "name": "restrict",
+    "label": "Restrict",
+    "slot": true,
+    "width": "100",
+    "align": "center"
+  },
+  {
+    "name": "actions",
+    "label": "Actions",
+    "width": "100",
+    "align": "right",
+    "slot": true
+  }
+]

@@ -1,0 +1,16 @@
+.el-dialog {
+  background: var(--el-bg-color-opacity);
+  --el-dialog-box-shadow: var(--el-dialog-box-shadow-main);
+
+  .el-dialog__header {
+    padding-bottom: 0;
+  }
+
+  .el-dialog__body {
+    padding-top: 0;
+  }
+
+  .el-dialog__footer {
+    padding-top: 0;
+  }
+}

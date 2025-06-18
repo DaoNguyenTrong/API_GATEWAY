@@ -1,0 +1,252 @@
+.basin-container {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.map-container {
+  height: calc(100vh - var(--el-navbar-height));
+  position: relative;
+  --el-color-primary: #005993;
+  --el-color-primary-light-3: #004b7e;
+  --el-color-primary-light-5: #003c64;
+  --el-color-primary-light-7: #003152;
+  --el-color-primary-light-8: #00263f;
+  --el-color-primary-light-9: #001829;
+  --el-color-primary-dark-2: #006ab1;
+  --el-color-success: #209b3d;
+  --el-color-success-light-3: #1d8836;
+  --el-color-success-light-5: #1b672d;
+  --el-color-success-light-7: #184623;
+  --el-color-success-light-8: #17351e;
+  --el-color-success-light-9: #152519;
+  --el-color-success-dark-2: #4dc86a;
+  --el-color-warning: #f2711c;
+  --el-color-warning-light-3: #af551a;
+  --el-color-warning-light-5: #834318;
+  --el-color-warning-light-7: #573016;
+  --el-color-warning-light-8: #402716;
+  --el-color-warning-light-9: #2a1d15;
+  --el-color-warning-dark-2: #f58d49;
+  --el-color-danger: #da2c21;
+  --el-color-danger-light-3: #9f2222;
+  --el-color-danger-light-5: #781e1e;
+  --el-color-danger-light-7: #501a1a;
+  --el-color-danger-light-8: #3c1818;
+  --el-color-danger-light-9: #281616;
+  --el-color-danger-dark-2: #e25353;
+  --el-color-error: #da2c21;
+  --el-color-error-light-3: #9f2222;
+  --el-color-error-light-5: #781e1e;
+  --el-color-error-light-7: #501a1a;
+  --el-color-error-light-8: #3c1818;
+  --el-color-error-light-9: #281616;
+  --el-color-error-dark-2: #e25353;
+  --el-color-info: #42b8dd;
+  --el-color-info-light-3: #3487a1;
+  --el-color-info-light-5: #2b6679;
+  --el-color-info-light-7: #224550;
+  --el-color-info-light-8: #1d353c;
+  --el-color-info-light-9: #192428;
+  --el-color-info-dark-2: #68c6e4;
+  --el-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  --el-box-shadow-light: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  --el-box-shadow-lighter: 0px 0px 6px rgba(0, 0, 0, 0.72);
+  --el-box-shadow-dark: 0px 16px 48px 16px rgba(0, 0, 0, 0.72),
+    0px 12px 32px #000000, 0px 8px 16px -8px #000000;
+  --el-bg-color-page: #212429;
+  --el-bg-color: #212429;
+  --el-bg-color-overlay: #2c3034;
+  --el-bg-nav-color: #2c3034;
+  --el-text-color-primary: #e5eaf3;
+  --el-text-color-regular: #cfd3dc;
+  --el-text-color-secondary: #a3a6ad;
+  --el-text-color-placeholder: #8d9095;
+  --el-text-color-disabled: #6c6e72;
+  --el-border-color-darker: #636466;
+  --el-border-color-dark: #58585b;
+  --el-border-color: #4c4d4f;
+  --el-border-color-light: #414243;
+  --el-border-color-lighter: #363637;
+  --el-border-color-extra-light: #2b2b2c;
+  --el-fill-color-darker: #444c58;
+  --el-fill-color-dark: #353b44;
+  --el-fill-color: #272a2c;
+  --el-fill-color-light: #252a30;
+  --el-fill-color-lighter: #252a30;
+  --el-fill-color-extra-light: #131518;
+  --el-fill-color-blank: transparent !important;
+  --el-mask-color: rgba(0, 0, 0, 0.8);
+  --el-mask-color-extra-light: rgba(0, 0, 0, 0.3);
+  --el-navbar-height: 70px;
+
+  .el-collapse {
+    --el-collapse-header-text-color: #cfd3dc !important;
+    --el-collapse-border-color: var(--el-border-color);
+  }
+
+
+
+  .rain-session {
+    position: absolute;
+    top: 10px;
+    left: 300px;
+    z-index: 100;
+    background-color: rgba(30, 57, 51, 0.8);
+    border: solid 1px #777;
+    border-radius: var(--el-border-radius-base);
+  }
+
+  .station-time {
+    position: absolute;
+    top: 10px;
+    left: 520px;
+    z-index: 100;
+    padding: 11px 15px;
+    background-color: rgba(30, 57, 51, 0.8);
+    border: solid 1px #777;
+    border-radius: var(--el-border-radius-base);
+    color: var(--el-text-color-regular);
+  }
+
+  .mapboxgl-popup {
+    max-width: max-content !important;
+  }
+
+  .mapboxgl-popup-content {
+    padding: 0;
+    color: var(--el-text-color-regular);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #2c3034e7;
+    font-size: 0.9rem;
+  }
+
+  .mapboxgl-popup-content {
+    box-shadow: var(--el-box-shadow-light);
+  }
+
+  .mapboxgl-popup-anchor-top {
+    .mapboxgl-popup-tip {
+      border-bottom-color: #2c3034de;
+    }
+  }
+
+  .mapboxgl-popup-anchor-bottom {
+    .mapboxgl-popup-tip {
+      border-top-color: #2c3034de;
+    }
+  }
+
+  .mapboxgl-popup-anchor-right {
+    .mapboxgl-popup-tip {
+      border-left-color: #2c3034de;
+    }
+  }
+
+  .mapboxgl-popup-anchor-left {
+    .mapboxgl-popup-tip {
+      border-right-color: #2c3034de;
+    }
+  }
+
+  .mapboxgl-popup-close-button {
+    background-color: #848990;
+    color: #fff;
+    padding: 4px;
+    top: 6px;
+    right: 6px;
+    line-height: 10px;
+    border-radius: 50%;
+  }
+
+  #map {
+    width: 100%;
+    height: 100%;
+  }
+
+  .upload-basin-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+
+  .rain-radio-group {
+    position: absolute;
+    z-index: 100;
+    left: 35px;
+    top: 10px;
+  }
+
+  .action-container {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    left: 40px;
+    padding: 0 10px;
+    z-index: 100;
+
+    .timer-label {
+      padding: 4px 10px;
+      background-color: rgba(30, 57, 51, 0.7);
+      width: max-content;
+      border-radius: 10px;
+      margin: auto;
+      color: #dadadade;
+    }
+
+    .el-slider.time-slider {
+      .el-slider__button {
+        border: none;
+        border-radius: 0;
+        width: 0;
+        height: 0;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-bottom: 15px solid white;
+        background-color: transparent;
+        transform: translateY(10px);
+      }
+    }
+  }
+
+  .el-input-group__append,
+  .el-input-group__prepend {
+    background-color: transparent;
+  }
+
+  .my-button-group {
+    .el-button:not(.ignore-my-button-group) {
+      color: #fff;
+      border: solid 1px #777;
+      background-color: rgba(30, 57, 51, 0.7);
+      padding: 8px;
+    }
+
+    .el-button+.el-button {
+      margin-left: 0;
+    }
+
+    .el-button:not(:first-child):not(:last-child).el-button--primary {
+      border-top-color: var(--el-button-divide-border-color);
+      border-bottom-color: var(--el-button-divide-border-color);
+    }
+
+    .el-button:not(:first-child):not(:last-child):not(.ignore-my-button-group) {
+      border-radius: 0;
+    }
+
+    .el-button:first-child:not(.ignore-my-button-group) {
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+
+    .el-button:last-child:not(.ignore-my-button-group) {
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+    }
+
+    .el-button:not(:last-child) {
+      margin-bottom: -1px;
+    }
+  }
+}

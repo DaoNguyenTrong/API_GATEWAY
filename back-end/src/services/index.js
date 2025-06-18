@@ -1,0 +1,15 @@
+module.exports.authService = require('./authentication/auth.service');
+module.exports.emailService = require('./email.service');
+module.exports.tokenService = require('./authentication/token.service');
+module.exports.accountService = require('./authentication/account.service');
+module.exports.roleService = require('./authorization/role.service');
+module.exports.optionService = require('./options/options.service');
+module.exports.webPushService = require('./notifications/notifications.service');
+module.exports.notificationService = require('./notifications/notifications.service');
+module.exports.screenService = require('./authorization/screen.service');
+module.exports.mapScreenService = require('./authorization/map-screen.service');
+module.exports.fileService = require('./file.service');
+module.exports.apiKeyService = require('./authorization/api-key.service');
+module.exports.apiKeyScreenService = require('./authorization/api-key-screen.service');
+module.exports.routePathService = require('./authorization/route-path.service');
+module.exports.routePathScreenService = require('./authorization/route-path-screen.service');

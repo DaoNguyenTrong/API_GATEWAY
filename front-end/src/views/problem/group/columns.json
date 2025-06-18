@@ -1,0 +1,20 @@
+[
+	{
+		"property": "name",
+		"label": "Problem group name",
+		"name": "name",
+		"sortable": true
+	},
+	{
+		"property": "code",
+		"name": "Code",
+		"label": "Problem group code",
+		"sortable": true
+	},
+	{
+		"align": "right",
+		"slot": true,
+		"name": "actions",
+		"label": "Actions"
+	}
+]

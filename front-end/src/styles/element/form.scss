@@ -1,0 +1,219 @@
+// ---------------------------------------------
+// Base Input Styles
+// ---------------------------------------------
+.el-input,
+.el-date-editor {
+  .el-range-input {
+    font-size: 0.9rem !important;
+  }
+
+  input {
+
+    &::-webkit-input-placeholder,
+    &:-moz-placeholder,
+    &::-moz-placeholder,
+    &:-ms-input-placeholder {
+      font-size: 0.9rem;
+    }
+  }
+
+  .el-input__wrapper {
+    background-color: transparent;
+    width: 100%;
+
+    .el-input__inner {
+      text-align: left;
+    }
+  }
+
+  &.active {
+    border: solid 1px var(--el-color-info) !important;
+  }
+}
+
+// ---------------------------------------------
+// Size Variants
+// ---------------------------------------------
+.el-select {
+  --el-input-height: var(--el-component-size);
+
+  &.el-select--large {
+    --el-input-height: var(--el-component-size-large);
+  }
+
+  &.el-select--small {
+    --el-input-height: var(--el-component-size-small);
+  }
+
+  &.el-select--mini {
+    --el-input-height: var(--el-component-size-mini);
+  }
+
+  .el-select__wrapper {
+    min-height: var(--el-input-height) !important;
+  }
+}
+
+// ---------------------------------------------
+// Form Margin
+// ---------------------------------------------
+.el-form {
+  .el-form-item--default {
+    margin-bottom: 12px;
+  }
+
+  .el-form-item--small {
+    margin-bottom: 8px;
+  }
+}
+
+// ---------------------------------------------
+// Variant: filled
+// ---------------------------------------------
+.filled {
+
+  &.el-input,
+  &.el-select,
+  &.el-select-v2,
+  &.el-textarea,
+  &.el-autocomplete,
+  &.el-input-number {
+
+    .el-select__wrapper,
+    .el-input__wrapper,
+    .el-textarea__inner,
+    .el-select-v2__wrapper {
+      background-color: var(--el-fill-color);
+    }
+  }
+}
+
+.filled.el-date-editor.el-input__wrapper,
+.el-textarea__inner {
+  background-color: var(--el-fill-color);
+}
+
+// ---------------------------------------------
+// Variant: overlay
+// ---------------------------------------------
+.overlay {
+
+  &.el-input,
+  &.el-select,
+  &.el-select-v2,
+  &.el-textarea,
+  &.el-autocomplete,
+  &.el-input-number {
+
+    .el-select__wrapper,
+    .el-input__wrapper,
+    .el-textarea__inner,
+    .el-select-v2__wrapper {
+      background-color: var(--el-bg-color-overlay);
+    }
+  }
+}
+
+.overlay.el-date-editor.el-input__wrapper,
+.el-textarea__inner {
+  background-color: var(--el-bg-color-overlay);
+}
+
+// ---------------------------------------------
+// Variant: no-outline
+// ---------------------------------------------
+.no-outline {
+
+  &.el-input,
+  &.el-select,
+  &.el-select-v2,
+  &.el-textarea,
+  &.el-autocomplete,
+  &.el-input-number {
+
+    .el-select__wrapper,
+    .el-input__wrapper,
+    .el-textarea__inner,
+    .el-select-v2__wrapper {
+      box-shadow: none;
+      border: none;
+    }
+  }
+
+  &.el-date-editor {
+
+    .el-input__wrapper,
+    .el-textarea__inner {
+      box-shadow: none;
+      border: none;
+    }
+  }
+}
+
+// ---------------------------------------------
+// Variant: rounded
+// ---------------------------------------------
+.rounded {
+
+  &.el-input,
+  &.el-select {
+
+    .el-select__wrapper,
+    .el-input__wrapper {
+      border-radius: 15px;
+    }
+  }
+}
+
+// ---------------------------------------------
+// Variant: borderless
+// ---------------------------------------------
+.borderless {
+
+  &.el-input,
+  &.el-select {
+
+    .el-select__wrapper,
+    .el-input__wrapper {
+      box-shadow: none;
+    }
+  }
+}
+
+// Special case for select-v2 no-border
+.el-select-v2.el-select__no-border {
+  min-width: none;
+
+  .el-select-v2__wrapper {
+    border: none;
+  }
+}
+
+// ---------------------------------------------
+// Input Hover & Focus States
+// ---------------------------------------------
+.el-input,
+.el-select,
+.el-select-v2,
+.el-textarea,
+.el-autocomplete,
+.el-input-number {
+
+  .el-select__wrapper:hover,
+  .el-input__wrapper:hover,
+  .el-textarea__inner:hover,
+  .el-select-v2__wrapper:hover {
+    box-shadow: 0 0 0 1px var(--el-input-hover-border-color) inset;
+  }
+
+  .el-select__wrapper.is-focus,
+  .el-input__wrapper.is-focus,
+  .el-textarea__inner.is-focus,
+  .el-select-v2__wrapper.is-focus,
+  .el-select__wrapper:focus,
+  .el-input__wrapper:focus,
+  .el-textarea__inner:focus,
+  .el-select-v2__wrapper:focus {
+    box-shadow: 0 0 0 1px var(--el-input-focus-border-color) inset;
+  }
+}

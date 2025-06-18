@@ -1,0 +1,53 @@
+[
+  {
+    "property": "username",
+    "label": "Username",
+    "sortable": true,
+    "name": "username"
+  },
+  {
+    "property": "avatar",
+    "label": "Avatar",
+    "name": "avatar",
+    "slot": true
+  },
+  {
+    "property": "roleId",
+    "label": "Role group",
+    "name": "roleId",
+    "slot": true
+  },
+  {
+    "property": "accessAllProject",
+    "label": "Access all project",
+    "name": "accessAllProject",
+    "slot": true
+  },
+  {
+    "property": "name",
+    "label": "Full name",
+    "sortable": true,
+    "name": "name"
+  },
+  {
+    "property": "email",
+    "label": "Email",
+    "sortable": true,
+    "name": "email"
+  },
+  {
+    "property": "status",
+    "label": "Status",
+    "sortable": false,
+    "name": "status",
+    "slot": true
+  },
+  {
+    "align": "center",
+    "slot": true,
+    "name": "actions",
+    "label": "Actions",
+    "minWidth": "150px",
+    "width": "180px"
+  }
+]

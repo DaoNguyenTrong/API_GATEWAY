@@ -1,0 +1,7 @@
+.el-checkbox {
+  &.hide-label {
+    .el-checkbox__label {
+      display: none;
+    }
+  }
+}

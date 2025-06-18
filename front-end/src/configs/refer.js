@@ -1,0 +1,20 @@
+export default {
+  superScript: {
+    zero: "⁰",
+    one: "¹",
+    two: "²",
+    three: "³",
+    four: "⁴",
+    five: "⁵",
+    six: "⁶",
+    seven: "⁷",
+    eight: "⁸",
+    nine: "⁹",
+    plus: "⁺",
+    sub: "⁻",
+    equal: "⁼",
+    leftBracket: "⁽",
+    rightBracket: "⁾",
+    n: "ⁿ",
+  },
+};

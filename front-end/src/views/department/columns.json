@@ -1,0 +1,19 @@
+[
+	{
+		"property": "name",
+		"label": "Department",
+		"name": "name"
+	},
+	{
+		"property": "manager",
+		"name": "manager",
+		"label": "Manager",
+		"slot": true
+	},
+	{
+		"align": "right",
+		"slot": true,
+		"name": "actions",
+		"label": "Actions"
+	}
+]

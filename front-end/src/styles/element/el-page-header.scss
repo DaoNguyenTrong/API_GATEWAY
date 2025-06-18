@@ -1,0 +1,11 @@
+.el-page-header {
+  .el-page-header__breadcrumb {
+    margin-bottom: 0;
+  }
+  .el-page-header__header {
+    flex-wrap: wrap;
+    .el-page-header__left {
+      margin-right: 0;
+    }
+  }
+}

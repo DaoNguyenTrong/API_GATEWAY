@@ -1,0 +1,40 @@
+[
+	{
+		"property": "title",
+		"label": "Title",
+		"name": "title",
+		"sortable": true
+	},
+	{
+		"property": "project",
+		"name": "project",
+		"label": "Project",
+		"slot": true
+	},
+	{
+		"property": "status",
+		"name": "status",
+		"label": "Status",
+		"slot": true,
+		"sortable": true
+	},
+	{
+		"property": "priority",
+		"name": "priority",
+		"label": "Priority",
+		"slot": true,
+		"sortable": true
+	},
+	{
+		"property": "createdBy",
+		"name": "createdBy",
+		"label": "Created by",
+		"slot": true
+	},
+	{
+		"align": "right",
+		"slot": true,
+		"name": "actions",
+		"label": "Actions"
+	}
+]

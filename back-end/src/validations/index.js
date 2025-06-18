@@ -1,0 +1,9 @@
+module.exports.authValidation = require('./authentication/auth.validation');
+module.exports.accountValidation = require('./authentication/account.validation');
+module.exports.roleValidation = require('./authorization/role.validation');
+module.exports.notificationsValidation = require('./notifications/notifications.validation');
+module.exports.screenValidation = require('./authorization/screen.validation');
+module.exports.apiKeyValidation = require('./authorization/api-key.validation');
+module.exports.apiKeyScreenValidation = require('./authorization/api-key-screen.validation');
+module.exports.routePathValidation = require('./authorization/route-path.validation');
+module.exports.routePathScreenValidation = require('./authorization/route-path-screen.validation');

@@ -1,0 +1,20 @@
+.el-switch {
+  .el-switch__label {
+    font-weight: normal;
+  }
+  .el-switch__core {
+    min-width: 35px;
+    .el-switch__action {
+      transition: outline 0.2s cubic-bezier(0, 0, 0.5, 1);
+      outline: none;
+    }
+  }
+}
+
+.el-switch:hover {
+  .el-switch__core {
+    .el-switch__action {
+      outline: #c4c4c48c solid 7px;
+    }
+  }
+}
